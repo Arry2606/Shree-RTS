@@ -2,12 +2,6 @@ import Image from "next/image";
 import MaterialIcon from "./MaterialIcon";
 import Reveal from "./Reveal";
 
-const CONTACT_IMAGE =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuDJFMZnjLCh6E8yq1kpIcJ2K5AwMM0yWQT5zyXu31qiC2mV0yrkjuBMPrVkvvPn-DRXWi9Y3ACmwcS70ItTkI3T7uarUvc1I55fSr7HJiR-HvzNGapbPBAzUjki487X_8ofpUGCx9ccm5geanPRz-Y9KZx7A6G4jdoN6k-C3TTAdnGH9g90kFV32iDDQEC9ai9S_kJHjH2Al5JYOiCiXVPi_m7KVkVTwicKrQe5cR6bA-EPQyFxoiT5mMtYA9oE_Op-OfCHQrzssxvk";
-
-const CONTACT_ALT =
-  "An artistic high-angle aerial view of a clean, organized residential layout in Gurugram, India, featuring lush green areas and structured housing. The lighting is bright and sunny, representing a clear day in the city. The overall aesthetic is clean, professional, and reliable, reinforcing the local nature of the business.";
-
 export default function Contact() {
   return (
     <section className="bg-surface py-section-padding" id="contact">
@@ -66,8 +60,8 @@ export default function Contact() {
         <Reveal className="h-[400px] overflow-hidden rounded-2xl border border-outline-variant shadow-lg">
           <Image
             className="h-full w-full object-cover"
-            src={CONTACT_IMAGE}
-            alt={CONTACT_ALT}
+            src="/get_in_touch.png"
+            alt="A tiffin image"
             width={800}
             height={400}
             sizes="(max-width: 768px) 100vw, 50vw"
